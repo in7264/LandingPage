@@ -10,11 +10,19 @@
   animation: fade-out 0.3s ease;
 
   &__item {
+    display: block;
     color: #fff;
     font-weight: 700;
     font-size: 13px;
     line-height: 27px;
     text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #d12d35;
+    }
   }
 }
 
@@ -51,6 +59,7 @@
   &--phone-wrapper {
     position: relative;
     display: inline-block;
+    padding-left: 10px;
 
     &:hover .phone-numbers {
       display: block;
